@@ -1,0 +1,72 @@
+name: Reviews bot
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Choose mode'
+        type: choice
+        options: [diagnose, pair, monitor]
+        default: diagnose
+  schedule:
+    - cron: '17,47 * * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: reviews-bot
+  cancel-in-progress: false
+
+jobs:
+  reviews:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    env:
+      MODE: ${{ inputs.mode || 'monitor' }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      PAIR_CODE: ${{ secrets.PAIR_CODE }}
+      STATE_PATH: .bot-state/state.json
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Restore state
+        if: env.MODE == 'monitor'
+        shell: bash
+        run: |
+          if git ls-remote --exit-code --heads origin bot-state >/dev/null; then
+            git fetch origin bot-state
+            git worktree add .bot-state origin/bot-state
+          else
+            mkdir .bot-state
+            git -C .bot-state init
+            git -C .bot-state checkout --orphan bot-state
+            git -C .bot-state remote add origin "$(git remote get-url origin)"
+            git -C .bot-state config http.https://github.com/.extraheader "$(git config --get http.https://github.com/.extraheader)"
+          fi
+
+      - name: Run bot
+        if: env.MODE != 'monitor' || (env.TELEGRAM_BOT_TOKEN != '' && env.TELEGRAM_CHAT_ID != '')
+        run: python bot.py --mode "$MODE"
+
+      - name: Missing setup
+        if: env.MODE == 'monitor' && (env.TELEGRAM_BOT_TOKEN == '' || env.TELEGRAM_CHAT_ID == '')
+        run: |
+          echo 'Add Telegram secrets and complete pair.'
+          exit 1
+
+      - name: Save state
+        if: always() && env.MODE == 'monitor'
+        shell: bash
+        run: |
+          if [ ! -f .bot-state/state.json ]; then exit 0; fi
+          git -C .bot-state config user.name 'reviews-bot'
+          git -C .bot-state config user.email 'reviews-bot@users.noreply.github.com'
+          git -C .bot-state add state.json
+          if git -C .bot-state diff --cached --quiet; then exit 0; fi
+          git -C .bot-state commit -m 'Update review delivery state'
+          git -C .bot-state push origin HEAD:refs/heads/bot-state
