@@ -235,5 +235,4 @@ if __name__ == '__main__':
         main()
     except Exception as exc:
         # Fixed error text is safe for public Actions logs.
-        print(f'Запуск остановлен ({type(exc).__name__}); проверьте секреты, режим и доступность площадок.')
-        raise SystemExit(1) from None
+        print(str(exc) if isinstance(exc, RuntimeError) else f'Ошибка: {type(exc).__name__}')
