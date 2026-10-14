@@ -1,6 +1,7 @@
 {
   "sources": {
     "2ГИС": {
+      "error": true,
       "initialized": true,
       "pending": {},
       "seen": [
