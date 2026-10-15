@@ -59,6 +59,7 @@
       ]
     },
     "Яндекс": {
+      "error": true,
       "initialized": true,
       "pending": {},
       "seen": [
