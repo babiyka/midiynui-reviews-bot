@@ -59,7 +59,6 @@
       ]
     },
     "Яндекс": {
-      "error": true,
       "initialized": true,
       "pending": {},
       "seen": [
@@ -89,6 +88,7 @@
         "7cc2f53eab9b77acc2d51fe73cd2378d1ae2b23247ec3560e13816aae2d7efdc",
         "7d0c752f2eb6327fb306291a05beb1baf107656f0a2b5d10aab14ef02a6923cf",
         "806af1b6c7ff65f4945061d702c75ca383c3e623f52474e5d9a7d467110d0161",
+        "9659a07d65e3a8ca32c98c3663399c3e6c3e6605d3e6d682aa2305834ccec759",
         "96f80f0933f3d65a00a052031ee3ddeca0c8a9d026a94e1bea90c0556c7c392b",
         "97c91a4dfd8688f331842cb73d7e325c6d2306af42bc190dd2ef18b91c9a89aa",
         "9ef7560aaef934c9a5a59bd022b0148774fdb3c51f60de80c8f39af9e8ea9fe6",
@@ -103,6 +103,7 @@
         "c2bcf93020e69124bc38cfcdf0f08898e2e556f97fafe429ca7096a3b8bf2d3c",
         "c48b0793e56d8ad12a8e55f1716b6438cdaeadd267e72974261e0d35f2702218",
         "c8ae3ef55d63151cdca6307a532b70783b280251c53cdc34634ad3a1ff9eb2ba",
+        "ce562a2ae8ff738de43f5d341b82ebbba4eff3facc9261f0539c5c943a8db03f",
         "d185209085f168b0a9eecfae779e3f759a31592dc93ac4ebac78acba958ecbdf",
         "d5555c867418b552bb3ef119295fcddb7dcfa4c5cd1c244ecc9be4b739fc8614",
         "d83b3001bda70b0f04b9f4860b3bb768feec1debf79536b05f26a7d25724be48",
