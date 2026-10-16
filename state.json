@@ -1,7 +1,17 @@
 {
   "sources": {
     "2ГИС": {
+      "error": false,
+      "failure_streak": 0,
+      "filter_version": 2,
       "initialized": true,
+      "last_counts": {
+        "delivered": 0,
+        "skipped_old": 0,
+        "skipped_undated": 0
+      },
+      "last_success_at": "2026-10-16T07:59:06.094612+00:00",
+      "monitoring_started_at": "2026-10-12T20:27:48+00:00",
       "pending": {},
       "seen": [
         "09530b98ff31f9ab9333bfe902349f9a0b2691f9f6f68d9db5fefccb93c5f2f5",
@@ -59,7 +69,17 @@
       ]
     },
     "Яндекс": {
+      "error": false,
+      "failure_streak": 0,
+      "filter_version": 2,
       "initialized": true,
+      "last_counts": {
+        "delivered": 0,
+        "skipped_old": 0,
+        "skipped_undated": 0
+      },
+      "last_success_at": "2026-10-16T07:59:03.274114+00:00",
+      "monitoring_started_at": "2026-10-12T20:27:48+00:00",
       "pending": {},
       "seen": [
         "021091c7760d157abeecdd3585704401f1edc8b98f8b6b1d6431c1d2373eac65",
