@@ -7,10 +7,10 @@
       "initialized": true,
       "last_counts": {
         "delivered": 0,
-        "skipped_old": 0,
+        "skipped_old": 1,
         "skipped_undated": 0
       },
-      "last_success_at": "2026-10-24T16:09:11.881225+00:00",
+      "last_success_at": "2026-10-24T16:44:29.173583+00:00",
       "monitoring_started_at": "2026-10-12T20:27:48+00:00",
       "pending": {},
       "seen": [
@@ -56,6 +56,7 @@
         "bb14fa9858189e076c11a592e69b791e523da07ba5e90c73442e24d10e3511d1",
         "bbdb0f4a0eb3cd8a8dfba22351569b3bc76d3a4963aa214ae98b881e1e243f59",
         "c2fe27401ed217d8888f468370437ba2922c11d83e7351d11379416367fd54db",
+        "c32205d2f55c49af5575fe0aa4767c318be1305a02b69bdc14f858f7287d70f5",
         "c50b02aa94d7344d898cce61d53d7d9be53bef45e1cb7750eefecfb51b58b242",
         "c5c41a686323abb7bceee7f2983bd5a79bd364cbecfba42e6fa130e50fd48af9",
         "c77356c0838f27e17862672bc656cb8d68c2d674f82fb26e6d83c6f46e8e030f",
@@ -80,7 +81,7 @@
         "skipped_old": 0,
         "skipped_undated": 0
       },
-      "last_success_at": "2026-10-24T16:09:09.008355+00:00",
+      "last_success_at": "2026-10-24T16:44:25.531043+00:00",
       "monitoring_started_at": "2026-10-12T20:27:48+00:00",
       "pending": {},
       "seen": [
