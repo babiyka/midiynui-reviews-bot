@@ -7,10 +7,10 @@
       "initialized": true,
       "last_counts": {
         "delivered": 0,
-        "skipped_old": 1,
+        "skipped_old": 0,
         "skipped_undated": 0
       },
-      "last_success_at": "2026-10-26T16:32:51.743954+00:00",
+      "last_success_at": "2026-10-26T17:25:48.633016+00:00",
       "monitoring_started_at": "2026-10-12T20:27:48+00:00",
       "pending": {},
       "seen": [
@@ -82,7 +82,7 @@
         "skipped_old": 0,
         "skipped_undated": 0
       },
-      "last_success_at": "2026-10-26T16:32:49.124368+00:00",
+      "last_success_at": "2026-10-26T17:25:44.885496+00:00",
       "monitoring_started_at": "2026-10-12T20:27:48+00:00",
       "pending": {},
       "seen": [
