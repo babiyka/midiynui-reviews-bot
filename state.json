@@ -6,11 +6,11 @@
       "filter_version": 2,
       "initialized": true,
       "last_counts": {
-        "delivered": 1,
+        "delivered": 0,
         "skipped_old": 0,
         "skipped_undated": 0
       },
-      "last_success_at": "2026-10-27T14:01:04.420469+00:00",
+      "last_success_at": "2026-10-27T14:59:24.395317+00:00",
       "monitoring_started_at": "2026-10-12T20:27:48+00:00",
       "pending": {},
       "seen": [
@@ -83,7 +83,7 @@
         "skipped_old": 0,
         "skipped_undated": 0
       },
-      "last_success_at": "2026-10-27T14:00:58.815178+00:00",
+      "last_success_at": "2026-10-27T14:59:20.632973+00:00",
       "monitoring_started_at": "2026-10-12T20:27:48+00:00",
       "pending": {},
       "seen": [
