@@ -10,7 +10,7 @@
         "skipped_old": 0,
         "skipped_undated": 0
       },
-      "last_success_at": "2026-10-30T08:33:03.969343+00:00",
+      "last_success_at": "2026-10-30T09:32:42.779289+00:00",
       "monitoring_started_at": "2026-10-12T20:27:48+00:00",
       "pending": {},
       "seen": [
@@ -75,7 +75,7 @@
     },
     "Яндекс": {
       "error": true,
-      "failure_streak": 12,
+      "failure_streak": 13,
       "filter_version": 2,
       "initialized": true,
       "last_alert_at": "2026-10-29T22:20:20.862584+00:00",
@@ -86,7 +86,7 @@
       },
       "last_error": "Страница проверки доступа: отзывы не получены",
       "last_error_stage": "чтение площадки",
-      "last_failure_at": "2026-10-30T08:33:00.685917+00:00",
+      "last_failure_at": "2026-10-30T09:32:39.869188+00:00",
       "last_success_at": "2026-10-29T20:24:38.400185+00:00",
       "monitoring_started_at": "2026-10-12T20:27:48+00:00",
       "pending": {},
