@@ -10,7 +10,7 @@
         "skipped_old": 0,
         "skipped_undated": 0
       },
-      "last_success_at": "2026-11-20T17:19:18.141586+00:00",
+      "last_success_at": "2026-11-20T23:22:38.696694+00:00",
       "monitoring_started_at": "2026-10-12T20:27:48+00:00",
       "pending": {},
       "seen": [
@@ -76,28 +76,29 @@
       ]
     },
     "Яндекс": {
-      "error": true,
-      "failure_streak": 176,
+      "error": false,
+      "failure_streak": 0,
       "filter_version": 2,
       "initialized": true,
       "last_alert_at": "2026-11-20T08:34:38.530054+00:00",
       "last_counts": {
-        "delivered": 0,
-        "skipped_old": 0,
+        "delivered": 1,
+        "skipped_old": 1,
         "skipped_undated": 0
       },
       "last_error": "Страница проверки доступа: отзывы не получены",
       "last_error_stage": "чтение площадки",
       "last_failure_at": "2026-11-20T17:19:14.209511+00:00",
-      "last_success_at": "2026-11-05T13:57:36.948812+00:00",
+      "last_success_at": "2026-11-20T23:22:35.916197+00:00",
       "monitoring_started_at": "2026-10-12T20:27:48+00:00",
       "pending": {},
-      "recovery_notice_pending": true,
+      "recovery_notice_pending": false,
       "seen": [
         "021091c7760d157abeecdd3585704401f1edc8b98f8b6b1d6431c1d2373eac65",
         "1aa0e955b38585061c5cc277aa2a6afac1c12cb51b7cdf93ddbe05f59d7a0f29",
         "1d1eca8147cb296a3b657146d26d0f42266c62907210a751b8776057f1dc096f",
         "25975abbba65fbbbe8af32206f3c9ed2f93fd1e033eb6eaf943f9142394d3009",
+        "26c6ce236b96eb706b8e1a77eada882d24b530d7c1b846f6d2df453e6e8fa03b",
         "29411749f7279340e27957165165414cd3f2e4b7aa368ee80b6fc4c7ab367b41",
         "2b619151918b6127527ad60b3f95a4d4cf8518b423f58e37effa26dda6a23e2d",
         "2e4cb40cbb6f2b59e032c7b4f42a0fde2c9d8754c4c928d899f0f4dbb5b19b62",
@@ -114,6 +115,7 @@
         "641f468844ab3e6835a213c4ecea7bfcdbf68343c60192a60105545ca2440dee",
         "64c6f6efbb9044d2a9168f04080b8501de69cd3d8c58ab0382d56f2dcafcac17",
         "6e3cb7d5424b430d58cee10f905c131a847bf6fc45eb78a4d104ae05bb63b1ea",
+        "6ebf777b066335d895d2c0483d75b7186fc4e1ea7ac2d86380a8df7762a9b1f7",
         "6ed541bff0c27b0be07b8e60b32b4a092484c0ac57aaaa47b97ba8f17d5bd7ad",
         "73b8f5839a37323dd9fa14520887f2db3599a96783947819c8bf46e1faab4f87",
         "73df9eb084d2271517fc8e9e515497d7df825ac852ae2f4cb0f07d9338f54ab3",
